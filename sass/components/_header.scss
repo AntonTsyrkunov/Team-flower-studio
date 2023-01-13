@@ -1,0 +1,72 @@
+.header {
+    height: 35px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.logo {    
+
+    &__svg {
+        width: 45px;
+        height: 35px;
+        fill: $icon-black;        
+}
+}
+
+.contact{
+    background-color: transparent;
+    margin-left: auto;
+    &__svg {
+    width: 20px;
+    height: 20px;
+    fill: $icon-black;
+    }
+}
+
+.menu-opener {
+    background-color: transparent;
+    margin-left: 17px;
+    &__svg {
+    width: 18px;
+    height: 16px;
+    fill: $icon-black;
+    }
+} 
+
+.header__nav {
+    display: none;
+}
+
+.mobile-menu{
+    position: relative;
+    background-color: $main-theme-color;
+    width: 320px;
+    padding-top: 124px;
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-bottom: 180px;;
+
+    &__closer{
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    &__svg{
+        width: 12px;
+        height: 12px;
+        display: block;       
+        fill: $main-white;        
+    }
+
+    &_nav{
+
+    }
+}
