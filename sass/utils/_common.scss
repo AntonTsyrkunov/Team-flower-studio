@@ -13,7 +13,17 @@ ul {
  }
 
  .container {
-    max-width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
+    @include for-size(phone) {
+        max-width: 320px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    @include for-size(tablet) {
+        max-width: 768px;
+    }
+    
+    @include for-size(desktop) {
+        max-width: 1200px;
+    }
  }

@@ -21,6 +21,22 @@
                 </svg>
     
             </a>
+            
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+    
+                    <li><a class="header__nav__ref" href="#hero">Anemone</a></li>
+    
+                    <li><a class="header__nav__ref" href="#about">About us</a></li>
+    
+                    <li><a class="header__nav__ref" href="#store">Store</a></li>
+    
+                    <li><a class="header__nav__ref" href="#delivery">Delivery</a></li>
+    
+                    <li><a class="header__nav__ref" href="#blog">Blog</a></li>
+    
+                </ul>
+            </nav>
     
             <button type="button" class="contact">
                 <svg class="contact__svg">
@@ -34,25 +50,9 @@
                 </svg>
             </button>
     
-            <nav class="header__nav">
-                <ul class="header__nav__list">
-    
-                    <li><a href="#hero">Anemone</a></li>
-    
-                    <li><a href="#about">About us</a></li>
-    
-                    <li><a href="#store">Store</a></li>
-    
-                    <li><a href="#delivery">Delivery</a></li>
-    
-                    <li><a href="#blog">Blog</a></li>
-    
-                </ul>
-            </nav>
-
         </div>        
 
-        <div class="mobile-menu">
+        <div class="mobile-menu faded">
 
             <button type="button" class="mobile-menu__closer">
                 <svg class="mobile-menu__svg">
@@ -60,29 +60,70 @@
                 </svg>
             </button>
 
-            <nav class="mobile-menu_nav">
+            <nav class="mobile-menu__nav">
                 <ul class="mobile-menu__nav__list">
 
-                    <li><a href="#hero">Anemone</a></li>
+                    <li class="mobile-menu__nav__item"><a href="#hero" class="mobile-menu__nav__ref">Anemone</a></li>
     
-                    <li><a href="#about">About us</a></li>
+                    <li class="mobile-menu__nav__item"><a href="#about" class="mobile-menu__nav__ref">About us</a></li>
     
-                    <li><a href="#store">Store</a></li>
+                    <li class="mobile-menu__nav__item"><a href="#store" class="mobile-menu__nav__ref">Store</a></li>
     
-                    <li><a href="#delivery">Delivery</a></li>
+                    <li class="mobile-menu__nav__item"><a href="#delivery" class="mobile-menu__nav__ref">Delivery</a></li>
     
-                    <li><a href="#blog">Blog</a></li>
+                    <li class="mobile-menu__nav__item"><a href="#blog" class="mobile-menu__nav__ref">Blog</a></li>
     
                 </ul>
             </nav>
             
-        </div>
-
-        <div class="contact-modal">
+        </div>     
 
         </div>
 
     </header>
+
+    <div class="backdrop is-hidden">
+        <div class="modal-field">
+
+            <button type="button" class="modal-close">
+                <svg class="modal-field__svg">
+                    <use href="./images/icons.svg#modal-close"></use>
+                </svg>
+            </button>
+
+            <h2 class="modal-field__caption">Contact us</h2>
+
+            <p class="modal-field__content">If you have any additional questions or you want to clarify something before 
+                you make an order please fill in your contact details. We will call you back. 
+            </p>
+
+            <form action="" class="">
+
+                <ladel class="name-label">
+                    <span class="name-label__title">Name</span>
+                    <input 
+                        name="username" 
+                        class="mail-label__input"
+                        type="text"                         
+                        placeholder="Kristin Watson">
+                </ladel>
+
+                <ladel class="mail-label">
+                    <span class="mail-label__title">Email</span>
+                    <input 
+                        name="e-mail" 
+                        class="mail-label__input" 
+                        type="text"
+                        placeholder="tanya.hill@example.com">
+                        
+                </ladel>             
+
+            </form>
+
+            <button type="submit" class="modal-field__button">Send</button>
+
+        </div>        
+    </div>
     
 </body>
 </html>
